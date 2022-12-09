@@ -470,6 +470,7 @@ class ConnectivityMeasure(BaseEstimator, TransformerMixin):
 
         # Compute all the matrices, stored in "connectivities"
         if self.kind == 'correlation':
+            print("tesssst")
             covariances_std = [self.cov_estimator_.fit(
                 signal._standardize(x, detrend=False, standardize=True)
                 ).covariance_ for x in X]
