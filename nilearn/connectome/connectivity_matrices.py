@@ -411,6 +411,7 @@ class ConnectivityMeasure(BaseEstimator, TransformerMixin):
         self.kind = kind
         self.vectorize = vectorize
         self.discard_diagonal = discard_diagonal
+        print("teeeeeeeeeeeeeeeest")
 
     def _check_input(self, X, confounds=None):
         if not hasattr(X, "__iter__"):
